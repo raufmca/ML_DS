@@ -45,3 +45,31 @@ df['tip %'] = np.round(df['tip %'],2)
 # to know the shape
 
 df.shape
+
+# to set index from columns
+
+df.set_index('Payment ID') # this action is temp
+
+# to set permanently
+
+df = df.set_index('Payment ID')
+
+# to revert back the set index
+
+df.reset_index()
+
+# same way to make it permanent
+
+df = df.reset_index()
+
+# to get the integer location indexes
+
+df.iloc[2]
+
+# to get the slice using
+
+df.iloc[2:5]
+
+# to get through string index
+
+df.loc['Sun4608']
